@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>People Dashboard</title>
+
+<!-- Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="PeopleDashboard.js"></script>
+
+<!-- Modern Table Styles -->
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f8;
+  padding: 20px;
+}
+
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.my-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.my-table th, .my-table td {
+  padding: 12px 15px;
+}
+
+.my-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.my-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.my-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+/* Hover effect */
+.my-table tbody tr:hover {
+  background-color: #d1f0e0;
+  color: #009879;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+  <h2>People Dashboard</h2>
+  <table class="my-table" id="people">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</body>
+</html>
